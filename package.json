@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/Venkatganesh16/KDL-BALAJI#readme",
   "dependencies": {
-    "lite-server": "^2.5.4"
+    "lite-server": "^2.5.4",
+    "object-path": ">=0.11.5"
   }
 }
