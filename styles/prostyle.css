@@ -1,51 +1,106 @@
 .navbar li {
     margin-right : 15px;
 }
+
+header {
+    margin-bottom: 10%;
+}
+
+footer {
+    background-color: whitesmoke;
+    margin-top: 10%;
+    margin-bottom: 1%;
+}
+
 /*CART PAGE*/
 .products-container {
-    max-width: 650px;
-    display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
 }
 
 .product-header {
-    width: 100%;
-    max-width: 650px;
-    display: flex;
     justify-content: flex-start;
-    border-bottom: 4px solid lightgrey;
+    border-bottom: 4px solid black;
     margin: 0 auto;
 }
 
-.product-title {
-    width: 45%;
-    display: flex;
-    align-items: center;
-}
 
 .price {
-    width: 15%;
+    justify-content: flex-start;
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
 }
 
 .quantity {
-    width: 30%;
+    justify-content: flex-start;
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
 }
 
 .total {
-    width: 10%;
+    justify-content: flex-start;
     display: flex;
     align-items: center;
+    padding: 10px 0;
+    margin: 0 auto;
 }
 
 .product {
-    width: 45%;
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
     padding: 10px 0;
+    margin: 0 auto;
 }
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: black;
+    cursor: pointer;
+}
+
+.sidenav {
+    height: 30%; /* Full-height: remove this if you want "auto" height */
+    width: 210px; /* Set the width of the sidebar */
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: whitesmoke; /* Black */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+    margin-top: 20%;
+    border-radius: 7px;
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: black;
+  }
+  
+  /* Style page content */
+  .main {
+    margin-left: 215px; /* Same as the width of the sidebar */
+    padding: 0px 10px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  
